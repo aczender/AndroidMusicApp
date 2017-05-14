@@ -1,0 +1,36 @@
+<resources>
+    <!-- Name of the activities -->
+    <string name="app_name">AndroidMusicApp</string>
+    <string name="category_library">Media Library</string>
+    <string name="category_store">Media Store</string>
+    <string name="category_playing">Now Playing</string>
+
+    <!-- These are the descriptions of the activities -->
+    <string name="main_description">"This is the Main activity of the app. It contains the other activity names where you can navigate from here."</string>
+    <string name="library_description">"This activity shows all the songs on the actual device.
+        In a developed version the songs will grouped by song title, artist, genre, album title and published date. A Horizontal ScrollView was used to show the options. By tapping them, a toast message pops up.
+        Below that there are the albums in a linear layout. By tapping them, the Media Player opens."</string>
+    <string name="store_description">"This activity shows the Media Store.
+        It is opened via the app. The first line is a search field.
+        Below that the activity (in a ScrollView) shows the album as an image, the title of the songs and the duration. It would be added by random selection.
+        The last icon is a "basket" and directs the user to the browser or to the Google Play store"</string>
+    <string name="playing_description">"This activity shows the Media Player.
+        The picture symbolizes the album cover. Below that the buttons show a toast message when the user taps them play / pause / forward / rewind / mute the song.
+        The "basket" symbol directs the user to the Media Store activity"</string>
+
+    <!-- Strings in Media Library -->
+    <string name="list_song">"song"</string>
+    <string name="list_artist">"artist"</string>
+    <string name="list_genre">"genre"</string>
+    <string name="list_album">"album"</string>
+    <string name="list_published">"published"</string>
+
+    <!-- Strings in Media Store -->
+    <string name="search_hint">"search for the music you want"</string>
+    <string name="song_title">"Title of the song"</string>
+    <string name="song_length">"2:00"</string>
+
+    <!-- Strings in Now Playing -->
+    <string name="playing_title">"Title of the song"</string>
+</resources>
+

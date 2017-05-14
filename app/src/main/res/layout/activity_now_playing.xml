@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/GeneralActivities"
+    tools:context="com.example.android.androidmusicapp.NowPlayingActivity"
+    tools:ignore="ContentDescription">
+
+    <TextView
+        style="@style/Description"
+        android:text="@string/playing_description" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/play_image" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/playing_title"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/rewind_song"
+            style="@style/PlayImageStyle"
+            android:onClick="rewindSong"
+            android:src="@drawable/rewind" />
+
+        <ImageView
+            android:id="@+id/play_song"
+            style="@style/PlayImageStyle"
+            android:onClick="playSong"
+            android:src="@drawable/play" />
+
+        <ImageView
+            android:id="@+id/forward_song"
+            style="@style/PlayImageStyle"
+            android:onClick="forwardSong"
+            android:src="@drawable/forward" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/pause_song"
+            style="@style/PlayImageStyle"
+            android:onClick="pauseSong"
+            android:src="@drawable/pause" />
+
+        <ImageView
+            android:id="@+id/shopping"
+            style="@style/PlayImageStyle"
+            android:onClick="goToStore"
+            android:src="@drawable/basket" />
+
+        <ImageView
+            android:id="@+id/mute_song"
+            style="@style/PlayImageStyle"
+            android:onClick="muteSong"
+            android:src="@drawable/mute" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/GeneralActivities"
+    tools:context="com.example.android.androidmusicapp.MediaStoreActivity"
+    tools:ignore="ContentDescription">
+
+    <TextView
+        style="@style/Description"
+        android:text="@string/store_description" />
+
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/search_hint"
+        android:inputType="textCapWords"
+        android:textColor="@color/textColorPrimary"
+        android:textColorHint="@color/textColorPrimary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/StoreStyle"
+                    android:layout_weight="1"
+                    android:src="@drawable/default_play" />
+
+                <TextView
+                    style="@style/StoreStyle"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/song_title" />
+
+                <TextView
+                    style="@style/StoreStyle"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/song_length" />
+
+                <ImageView
+                    android:id="@+id/shoppinga"
+                    style="@style/StoreStyle"
+                    android:layout_weight="1"
+                    android:onClick="goToShop"
+                    android:src="@drawable/basket" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/default_play" />
+
+                <TextView
+                    style="@style/StoreStyle"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/song_title" />
+
+                <TextView
+                    style="@style/StoreStyle"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/song_length" />
+
+                <ImageView
+                    android:id="@+id/shoppingb"
+                    style="@style/StoreStyle"
+                    android:layout_weight="1"
+                    android:onClick="goToShop"
+                    android:src="@drawable/basket" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/StoreStyle"
+                    android:layout_weight="1"
+                    android:src="@drawable/default_play" />
+
+                <TextView
+                    style="@style/StoreStyle"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/song_title" />
+
+                <TextView
+                    style="@style/StoreStyle"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/song_length" />
+
+                <ImageView
+                    android:id="@+id/shoppingc"
+                    style="@style/StoreStyle"
+                    android:layout_weight="1"
+                    android:onClick="goToShop"
+                    android:src="@drawable/basket" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

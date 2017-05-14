@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/GeneralActivities"
+    tools:context="com.example.android.androidmusicapp.MediaLibraryActivity"
+    tools:ignore="ContentDescription">
+
+    <TextView
+        style="@style/Description"
+        android:text="@string/library_description" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/song_list"
+                style="@style/ListingStyle"
+                android:onClick="songList"
+                android:text="@string/list_song" />
+
+            <TextView
+                android:id="@+id/artist_list"
+                style="@style/ListingStyle"
+                android:onClick="artistList"
+                android:text="@string/list_artist" />
+
+            <TextView
+                android:id="@+id/genre_list"
+                style="@style/ListingStyle"
+                android:onClick="genreList"
+                android:text="@string/list_genre" />
+
+            <TextView
+                android:id="@+id/album_list"
+                style="@style/ListingStyle"
+                android:onClick="album_list"
+                android:text="@string/list_album" />
+
+            <TextView
+                android:id="@+id/published_list"
+                style="@style/ListingStyle"
+                android:onClick="publishedList"
+                android:text="@string/list_published" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/acdc"
+            style="@style/CoverStyle"
+            android:onClick="openAcdc"
+            android:src="@drawable/acdc" />
+
+        <ImageView
+            android:id="@+id/matchbox"
+            style="@style/CoverStyle"
+            android:onClick="openMatchbox"
+            android:src="@drawable/matchbox" />
+
+        <ImageView
+            android:id="@+id/beatles"
+            style="@style/CoverStyle"
+            android:onClick="openBeatles"
+            android:src="@drawable/beatles" />
+    </LinearLayout>
+</LinearLayout>
